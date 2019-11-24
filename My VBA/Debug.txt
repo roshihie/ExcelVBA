@@ -1,0 +1,1018 @@
+########### マッチ情報 ###########
+  ●ブロック行数        : 45
+    新ソース   CmpBegin : 71
+               CmpEnd   : 115
+ 
+    旧ソース   CmpBegin : 73
+               CmpEnd   : 117
+########### マッチ情報 ###########
+  ●ブロック行数        : 45
+    新ソース   CmpBegin : 116
+               CmpEnd   : 160
+ 
+    旧ソース   CmpBegin : 118
+               CmpEnd   : 162
+########### マッチ情報 ###########
+  ●ブロック行数        : 45
+    新ソース   CmpBegin : 161
+               CmpEnd   : 205
+ 
+    旧ソース   CmpBegin : 164
+               CmpEnd   : 208
+########### マッチ情報 ###########
+  ●ブロック行数        : 45
+    新ソース   CmpBegin : 206
+               CmpEnd   : 250
+ 
+    旧ソース   CmpBegin : 209
+               CmpEnd   : 253
+########### マッチ情報 ###########
+  ●ブロック行数        : 45
+    新ソース   CmpBegin : 251
+               CmpEnd   : 295
+ 
+    旧ソース   CmpBegin : 254
+               CmpEnd   : 298
+########### マッチ情報 ###########
+  ●ブロック行数        : 45
+    新ソース   CmpBegin : 296
+               CmpEnd   : 340
+ 
+    旧ソース   CmpBegin : 299
+               CmpEnd   : 343
+########### マッチ情報 ###########
+  ●ブロック行数        : 45
+    新ソース   CmpBegin : 341
+               CmpEnd   : 385
+ 
+    旧ソース   CmpBegin : 344
+               CmpEnd   : 388
+########### マッチ情報 ###########
+  ●ブロック行数        : 39
+    新ソース   CmpBegin : 386
+               CmpEnd   : 424
+ 
+    旧ソース   CmpBegin : 389
+               CmpEnd   : 427
+########### マッチ情報 ###########
+  ●ブロック行数        : 32
+    新ソース   CmpBegin : 428
+               CmpEnd   : 459
+ 
+    旧ソース   CmpBegin : 429
+               CmpEnd   : 460
+########### マッチ情報 ###########
+  ●ブロック行数        : 26
+    新ソース   CmpBegin : 35
+               CmpEnd   : 60
+ 
+    旧ソース   CmpBegin : 37
+               CmpEnd   : 62
+########### マッチ情報 ###########
+  ●ブロック行数        : 18
+    新ソース   CmpBegin : 0
+               CmpEnd   : 17
+ 
+    旧ソース   CmpBegin : 0
+               CmpEnd   : 17
+########### マッチ情報 ###########
+  ●ブロック行数        : 17
+    新ソース   CmpBegin : 18
+               CmpEnd   : 34
+ 
+    旧ソース   CmpBegin : 19
+               CmpEnd   : 35
+########### マッチ情報 ###########
+  ●ブロック行数        : 9
+    新ソース   CmpBegin : 61
+               CmpEnd   : 69
+ 
+    旧ソース   CmpBegin : 64
+               CmpEnd   : 72
+ 
+ 
+####### New Source ############################################################
+****** ************************** データの始め ********************************          True
+00001  IDENTIFICATION DIVISION.                                                    True
+00002  PROGRAM-ID.    CMC16000.                                                    True
+00003  AUTHOR.        SECOM.KASAHARA                                               True
+00004  DATE-WRITTEN.  SEP 27,1995.                                                 True
+00005  DATE-COMPILED.                                                              True
+00006  REMARKS.       SYSTEM NAME-------ｸﾗｽ ﾊﾞﾂﾁ                                   True
+00007  SUBSYSTEM NAME----ｸﾘｺｼ                                                      True
+00008  PACKAGE NAME------ﾏｽﾀｰｸﾘｺｼ                                                  True
+00009  MODULE NAME-------自動変更異動作成．                                                 True
+00010  ENVIRONMENT DIVISION.                                                       True
+00011  CONFIGURATION SECTION.                                                      True
+00012  SOURCE-COMPUTER.            IBM-370.                                        True
+00013  OBJECT-COMPUTER.            IBM-370.                                        True
+00014  EJECT                                                                       True
+00015  DATA DIVISION.                                                              True
+00016  WORKING-STORAGE SECTION.                                                    True
+00017  *                                                                           True
+00018  01  FILLER.                                                                 True
+00019  02  FILLER              PIC X(16)  VALUE 'CMC16000 WORKING'.                True
+00020  02  FILLER              PIC X(16)  VALUE '-AREA START HERE'.                True
+00021  *                                                                           True
+00022  01  FILLER                  PIC X(16)  VALUE 'SWITCH------AREA'.            True
+00023  01  SWITCH-AREA.                                                            True
+00024  02  SW-LOOP             PIC X(4)   VALUE 'LOOP'.                            True
+00025  02  SW-LOOP1            PIC X(4)   VALUE 'LOOP'.                            True
+00026  02  SW-LOOP2            PIC X(4)   VALUE 'LOOP'                             True
+00027  *                                                                           True
+00028  01  FILLER                  PIC X(16)  VALUE 'SUBSCRIPT---AREA'.            True
+00029  01  SUBSCRIPT-AREA  SYNC.                                                   True
+00030  02  A1                  PIC S9(4)  VALUE ZERO  COMP.                        True
+00031  02  B1                  PIC S9(4)  VALUE ZERO  COMP.                        True
+00032  02  C1                  PIC S9(4)  VALUE ZERO  COMP.                        True
+00033  *                                                                           True
+00034  01  FILLER                  PIC X(16)  VALUE 'WORK-------AREAX'.            True
+00035  01  WORK-AREAX.                                                             True
+00036  02  WK-SMKJKP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00037  02  WK-SMKJNP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00038  02  WK-STKDTP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00039  02  WK-STKDKP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00040  02  WK-SRATEP           PIC S9(5)  VALUE ZERO  COMP-3.                      True
+00041  02  WK-SKRATP           PIC S9(5)  VALUE ZERO  COMP-3.                      True
+00042  02  WK-KMKJKP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00043  02  WK-KMKJNP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00044  02  WK-KMKJBP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00045  02  WK-KTKDTX                                                               True
+00046  03  WK-KTKDTP       OCCURS 4                                                True
+00047  PIC 9(9)   COMP-3.                                                          True
+00048  02  WK-KTKDKX.                                                              True
+00049  03  WK-KTKDKP       OCCURS 4                                                True
+00050  PIC 9(9)   COMP-3.                                                          True
+00051  02  WK-HENDTP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00052  02  WK-HENDKP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00053  02  WK-ZTKDKP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00054  02  WK-KRATEP           PIC S9(5)  VALUE ZERO  COMP-3.                      True
+00055  02  WK-KKRATP           PIC S9(5)  VALUE ZERO  COMP-3.                      True
+00056  *   ルネサス１／２利子補給率用                                       CL**8               True
+00057  02  WK-RNRTX.                                                               True
+00058  03  WK-RNRTP        PIC S9(5)  VALUE ZERO COMP-3.                           True
+00059  02  WK-KFNRTX.                                                              True
+00060  03  WK-KFNRTP       PIC S9(5)  VALUE ZERO COMP-3.                           True
+00061  02  WK-KFRTX.                                                               True
+00062  03  WK-KFR1X.                                                               True
+00063  04  WK-KFR1P    PIC S9(5)  VALUE ZERO COMP-3.                               True
+00064  03  WK-KFR2X.                                                               True
+00065  04  WK-KFR2P    PIC S9(5)  VALUE ZERO COMP-3.                               True
+00066  03  WK-KFR3X.                                                               True
+00067  04  WK-KFR3P    PIC S9(5)  VALUE ZERO COMP-3.                               True
+00068  03  WK-KFR4X.                                                               True
+00069  04  WK-KFR4P    PIC S9(5)  VALUE ZERO COMP-3.                               True
+                                                                             False
+00070  02  WK-MMDTX.                                                               True
+00071  03  WK-MMDT9        PIC 9(9)   VALUE ZERO.                                  True
+00072  02  FILLER REDEFINES WK-MMDTX.                                              True
+00073  03  FILLER          PIC X(1).                                               True
+00074  03  WK-MMYM9        PIC 9(6).                                               True
+00075  03  FILLER          PIC X(2).                                               True
+00076  02  FILLER REDEFINES WK-MMDTX.                                              True
+00077  03  FILLER          PIC X(1).                                               True
+00078  03  WK-MMYY9        PIC 9(4).                                               True
+00079  03  WK-MMMD9        PIC 9(4).                                               True
+00080  02  FILLER REDEFINES WK-MMDTX.                                              True
+00081  03  FILLER          PIC X(1).                                               True
+00082  03  WK-MMDY9        PIC 9(4).                                               True
+00083  03  WK-MMDM9        PIC 9(2).                                               True
+00084  03  WK-MMDD9        PIC 9(2).                                               True
+00085  02  WK-YMDX.                                                                True
+00086  03  WK-YMD9         PIC 9(9)   VALUE ZERO.                                  True
+00087  02  FILLER REDEFINES WK-YMDX.                                               True
+00088  03  FILLER          PIC X(1).                                               True
+00089  03  WK-YMDYY9       PIC 9(4).                                               True
+00090  03  WK-YMDMD9       PIC 9(4).                                               True
+00091  02  FILLER REDEFINES WK-YMDX.                                               True
+00092  03  FILLER          PIC X(1).                                               True
+00093  03  WK-YMDY9        PIC 9(4).                                               True
+00094  03  WK-YMDM9        PIC 9(4).                                               True
+00095  03  WK-YMDD9        PIC 9(2).                                               True
+00096  02  WK-BYPSDP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00097  02  WK-HNKHP            PIC 9(5)   VALUE ZERO  COMP-3.                      True
+00098  02  WK-KZYRKX           PIC X(1).                                           True
+00099  *                                                                           True
+00100  01  FILLER                  PIC X(16)  VALUE 'KANJI ｵﾍﾟﾚｰﾀｰID'.             True
+00101  ++INCLUDE IMKANJI2                                                          True
+00102  *                                                                           True
+00103  01  FILLER                  PIC X(16)  VALUE 'IDOU HENSYU AREA'.            True
+00104  01  WK-IDOU-AREA.                                                           True
+00105  02  WK-IDOUX            PIC X(850).                                         True
+00106  02  FILLER REDEFINES WK-IDOUX.                                              True
+00107  ++INCLUDE IMUIDO01                                                          True
+00108  02  FILLER REDEFINES WK-IDOUX.                                              True
+00109  ++INCLUDE IMUIDO02                                                          True
+00110  02  FILLER REDEFINES WK-IDOUX.                                              True
+00111  ++INCLUDE IMUIDO03                                                          True
+00112  *                                                                           True
+00113  01  FILLER                  PIC X(16)  VALUE 'PARMX-------AREA'.            True
+00114  ++INCLUDE IMLKS129                                                          True
+00115  ++INCLUDE IMLKSB21                                                          True
+00116  ++INCLUDE IMLKS131                                                          True
+00117  *                                                                           True
+00118  01  FILLER                  PIC X(16)  VALUE 'ASBOUTOU----AREA'.            True
+00119  ++INCLUDE IMLOUTOU                                                          True
+00120  01  FILLER                  PIC X(16)  VALUE 'AM8B8300----AREA'.            True
+00121  ++INCLUDE IML8B830                                                          True
+00122  01  FILLER                  PIC X(16)  VALUE 'ASBMESSG-WORK   '.            True
+00123  *                                                                           True
+00124  ++INCLUDE IMMSG899                                                          True
+00125  *                                                                           True
+00126  01  FILLER                  PIC X(16)  VALUE 'MSG-PARM        '.            True
+00127  ++INCLUDE IMLMESSG                                                          True
+00128  *                                                                           True
+00129  01  FILLER                  PIC X(16)  VALUE 'ABEND-CODE      '.            True
+00130  01  ABEND-CODE.                                                             True
+00131  02  FILLER              PIC S9(5)  VALUE +999  COMP.                        True
+00132  *                                                                           True
+00133  01  FILLER.                                                                 True
+00134  02  FILLER              PIC X(16)  VALUE 'CMC16000 WORKING'.                True
+00135  02  FILLER              PIC X(16)  VALUE '-AREA ENDED HERE'.                True
+00136  EJECT                                                                       True
+00137  LINKAGE SECTION.                                                            True
+00138  ++INCLUDE IMCU0001                                                          True
+00139  *                                                                           True
+00140  01  LKC-SEID.                                                               True
+00141  02  LKC-SEIDX.                                                              True
+00142  ++INCLUDE IMUSEIDO                                                          True
+00143  *                                                                           True
+00144  01  LKC-KJNTBLX.                                                            True
+00145  ++INCLUDE IMUKRTBL                                                          True
+00146  *                                                                           True
+00147  ++INCLUDE IMC16000                                                          True
+00148  EJECT                                                                       True
+00149  PROCEDURE DIVISION USING LKC-COMMONX                                        True
+00150  LKC-SEID                                                                    True
+00151  LKC-KJNTBLX                                                                 True
+00152  LKC16-PARMX.                                                                True
+00153  *                                                                           True
+00154  ******************************************************************          True
+00155  *                                                                *          True
+00156  *            自動変更異動                                        *                True
+00157  *                                   -CMC16000-                   *          True
+00158  ******************************************************************          True
+00159  *                                                                           True
+00160  *        *********************************************************          True
+00161  *        *                                                       *          True
+00162  *        *           メイン処理                                  *               True
+00163  *        *********************************************************          True
+00164  *                                                                           True
+00165  PERFORM INIT-E THRU INIT-X.                                                 True
+00166  PERFORM SINKAK-E THRU SINKAK-X.                                             True
+00167  IF LKC16-SKOUTX NOT = SPACE ANE 'E'                                         True
+00168  PERFORM SKAK-PARMSET-E THRU SKAK-PARMSET-X                                  True
+00169  PERFORM SKAK-IDOSAKSEI-E THRU SKAK-IDOSAKSEI-X                              True
+00170  ELSE                                                                        True
+00171  NEXT SENTENCE.                                                              True
+00172  PERFORM KIGYOK-E THRU KIGYOK-X.                                             True
+00173  IF LKC16-KYOUTX NOT = SPACE AND 'E'                                         True
+00174  IF SEI-MIDNX (1) NOT = SPACE                                                True
+00175  PERFORM KYOK-PARMSET-E THRU KYOK-PARMSET-X                                  True
+00176  PERFORM KYOK-SEIDKSN-E THRU KYOK-SEIDKSN-X                                  True
+00177  ELSE                                                                        True
+00178  MOVE SPACE TO LKC16-KYOUTX                                                  True
+00179  ELSE                                                                        True
+00180  NEXT SENTENCE.                                                              True
+00181  PERFORM KIGKAK-E THRU KIGKAK-X.                                             True
+00182  IF LKC16-KKOUTX NOT = SPACE AND 'E'                                         True
+00183  PERFORM KKAK-PARMSET-E THRU KKAK-PARMSET-X                                  True
+00184  PERFORM KKAK-SEIDKSN-E THRU KKAK-SEIDKSN-X                                  True
+00185  PERFORM KKAK-IDOSAKSEI-E THRU KKAK-IDOSAKSEI-X                              True
+00186  ELSE                                                                        True
+00187  NEXT SENTENCE.                                                              True
+00188  GOBACK.                                                                     True
+00189  EJECT                                                                       True
+00190  *        *********************************************************          True
+00191  *        *                                                       *          True
+00192  *        *           初期処理                                    *              True
+00193  *        *********************************************************          True
+00194  *                                                                           True
+00195  INIT-E.                                                                     True
+00196  MOVE SPACE       TO LKC16-PARMX.                                            True
+00197  MOVE LKC-KJNTBLX TO LKSB129-KRTBL.                                          True
+00198  MOVE ZERO        TO WK-SMKJKP.                                              True
+00199  MOVE ZERO        TO WK-SMKJNP.                                              True
+00200  MOVE ZERO        TO WK-STKDTP.                                              True
+00201  MOVE ZERO        TO WK-STKDKP.                                              True
+00202  MOVE ZERO        TO WK-SRATEP.                                              True
+00203  MOVE ZERO        TO WK-SKRATP.                                              True
+00204  MOVE ZERO        TO WK-KMKJKP.                                              True
+00205  MOVE ZERO        TO WK-KMKJNP.                                              True
+00206  MOVE ZERO        TO WK-KMKJBP.                                              True
+00207  PERFORM WKTBL-INIT-E THRU WKTBL-INIT-X                                      True
+00208  VARYING A1 FROM +1 BY +1                                                    True
+00209  UNTIL (A1 > 4).                                                             True
+00210  MOVE ZERO        TO WK-ZTKDKP.                                              True
+00211  MOVE ZERO        TO WK-BYPSDP.                                              True
+00212  MOVE ZERO        TO WK-HNKHP.                                               True
+00213  MOVE SPACE       TO WK-KZYRKX.                                              True
+00214  MOVE SPACE       TO SEI-NTOJTX.                                             True
+00215  MOVE SPACE       TO SEI-KTOJTX.                                             True
+00216  PERFORM INIT-KMKJTSET-E THRU INIT-KMKJTSET-X.                               True
+00217  MOVE ZERO        TO WK-KMKJKP.                                              True
+00218  MOVE ZERO        TO WK-KMKJNP.                                              True
+00219  MOVE ZERO        TO WK-KMKJBP.                                              True
+00220  PERFORM WKTBL-INIT-E THRU WKTBL-INIT-X                                      True
+00221  VARYING A1 FROM +1 BY +1                                                    True
+00222  UNTIL (A1 >4).                                                              True
+00223  INIT-X.                                                                     True
+00224  EXIT.                                                                       True
+00225  EJECT                                                                       True
+00226  *        *********************************************************          True
+00227  *        *                                                       *          True
+00228  *        *           新規確定　判定                              *                 True
+00229  *        *********************************************************          True
+00230  *                                                                           True
+00231  SINKAK-E.                                                                   True
+00232  IF SEI-NKJNKX NOT = SPACE AND '000'                                         True
+00233  IF SEI-NRNJKX = '1'                                                         True
+00234  PERFORM SKAK-ZUIJI-E THRU SKAK-ZUIJI-X                                      True
+00235  ELSE                                                                        True
+00236  IF SEI-NMMDTX (1) NOT = SPACE                                               True
+00237  MOVE 'LOOP' TO SW-LOOP                                                      True
+00238  PERFORM SKAK-TEIREI-E THRU SKAK-TEIREI-X                                    True
+00239  VARYING A1 FROM +1 BY +1                                                    True
+00240  UNTIL (A1 > 4                 ) OR                                          True
+00241  (SEI-NMMDTX (A1) = SPACE) OR                                                True
+00242  (SW-LOOP = 'END'        )                                                   True
+00243  IF LKC16-SKOUTX = SPACE                                                     True
+00244  PERFORM SKAK-RINJI-E THRU SKAK-RINJI-X                                      True
+00245  ELSE                                                                        True
+00246  NEXT SENTENCE                                                               True
+00247  ELSE                                                                        True
+00248  NEXT SENTENCE                                                               True
+00249  ELSE                                                                        True
+00250  NEXT SENTENCE.                                                              True
+00251  SINKAK-X.                                                                   True
+00252  EXIT.                                                                       True
+00253  EJECT                                                                       True
+00254  *        *********************************************************          True
+00255  *        *                                                       *          True
+00256  *        *           既貸予告　判定                              *                 True
+00257  *        *********************************************************          True
+00258  *                                                                           True
+00259  KIGYOK-E.                                                                   True
+00260  IF SEI-KHKBNX = '2'                                                         True
+00261  IF SEI-KRNJKX = '1'                                                         True
+00262  PERFORM KYOK-ZUIJI-E THRU KYOK-ZUIJI-X                                      True
+00263  ELSE                                                                        True
+00264  IF SEI-KMMDTX (1) NOT = SPACE                                               True
+00265  MOVE 'LOOP' TO SW-LOOP                                                      True
+00266  PERFORM KYOK-TEIREI-E THRU KYOK-TEIREI-X                                    True
+00267  VARYING A1 FROM +1 BY +1                                                    True
+00268  UNTIL (A1 > 4                 ) OR                                          True
+00269  (SEI-KMMDTX (A1) = SPACE) OR                                                True
+00270  (SW-LOOP = 'END'        )                                                   True
+00271  IF LKC16-KYOUTX = SPACE                                                     True
+00272  PERFORM KYOK-RINJI-E THRU KYOK-RINJI-X                                      True
+00273  ELSE                                                                        True
+00274  NEXT SENTENCE                                                               True
+00275  ELSE                                                                        True
+00276  NEXT SENTENCE                                                               True
+00277  ELSE                                                                        True
+00278  NEXT SENTENCE.                                                              True
+00279  KIGYOK-X.                                                                   True
+00280  EXIT.                                                                       True
+00281  EJECT                                                                       True
+00282  *        *********************************************************          True
+00283  *        *                                                       *          True
+00284  *        *           既貸確定　判定                              *                 True
+00285  *        *********************************************************          True
+00286  *                                                                           True
+00287  KIGKAK-E.                                                                   True
+00288  IF SEI-KHKBNX = '2'                                                         True
+00289  IF SEI-KKJNKX NOT = SPACE AND '000'                                         True
+00290  IF SEI-SSITIX = '1' OR '5'                                                  True
+00291  IF (SEI-RMMDTP (1) NOT = ZERO) AND                                          True
+00292  (SEI-MIDNX  (1) NOT = SPACE)                                                True
+00293  MOVE SEI-RMMDTP (1) TO WK-KMKJNP                                            True
+00294  PERFORM KIG-TEKIBI-E THRU KIG-TEKIBI-X                                      True
+00295  VARYING A1 FROM +1 BY +1                                                    True
+00296  UNTIL (A1 > 4                ) OR                                           True
+00297  (SEI-MIDNX (A1) = SPACE)                                                    True
+00298  MOVE 'LOOP' TO SW-LOOP                                                      True
+00299  PERFORM KKAK-TEKISRH-E THRU KKAK-TEKISRH-X                                  True
+00300  VARYING A1 FROM +1 BY +1                                                    True
+00301  UNTIL (A1 > 4               ) OR                                            True
+00302  (WK-KTKDKP (A1) = ZERO) OR                                                  True
+00303  (SW-LOOP = 'END'      )                                                     True
+00304  ELSE                                                                        True
+00305  NEXT SENTENCE                                                               True
+00306  ELSE                                                                        True
+00307  NEXT SENTENCE                                                               True
+00308  ELSE                                                                        True
+00309  NEXT SENTENCE                                                               True
+00310  ELSE                                                                        True
+00311  NEXT SENTENCE.                                                              True
+00312  KIGKAK-X.                                                                   True
+00313  EXIT.                                                                       True
+00314  EJECT                                                                       True
+00315  *        *********************************************************          True
+00316  *        *                                                       *          True
+00317  *        *           既貸利率見直し基準日テーブル確定            *                          True
+00318  *        *********************************************************          True
+00319  *                                                                           True
+00320  INIT-KMKJTSET-E.                                                            True
+00321  IF SEI-RMMDTP (1) = ZERL                                                    True
+00322  NEXT SENTENCE                                                               True
+00323  ELSE                                                                        True
+00324  MOVE 'LOOP' TO SW-LOOP                                                      True
+00325  PERFORM INI-MKJSIFT-E THRU MKJSIFT-X                                        True
+00326  VARYING B1 FROM +1 BY +1                                                    True
+00327  UNTIL (B1 > 3) OR (SW-LOOP = 'END').                                        True
+00328  INIT-KMKJTSET-X.                                                            True
+00329  EXIT.                                                                       True
+00330  EJECT                                                                       True
+00331  *        *********************************************************          True
+00332  *        *                                                       *          True
+00333  *        *           基準日テーブルシフト判定                    *                      True
+00334  *        *********************************************************          True
+00335  *                                                                           True
+00336  INIT-MKJSIFT-E.                                                             True
+00337  COMPUTE C1 = B1 + 1.                                                        True
+00338  IF SEI-RMMDTP (C1) NOT = ZERO                                               True
+00339  MOVE 'END' TO SW-LOOP                                                       True
+00340  ELSE                                                                        True
+00341  MOVE SEI-RMMDTP (B1) TO WK-KMKJNP                                           True
+00342  PERFORM KIG-TEKIBI-E THRU KIG-TEKIBI-X                                      True
+00343  VARYING A1 FROM +1 BY +1                                                    True
+00344  UNTIL (A1 > 4) OR (SEI-MIDNX (A1) = SPACE)                                  True
+00345  PERFORM TBLSRH-E THRU TBLSRH-X                                              True
+00346  VARYING A1 FROM +1 BY +1                                                    True
+00347  UNTIL (A1 > 4) OR (WK-KTKDKP (A1) = ZERO)                                   True
+00348  COMPUTE A1 = A1 - 1                                                         True
+00349  MOVE WK-KTKDKP  (A1) TO WK-ZTKDKP                                           True
+00350  MOVE SEI-RMMDTP (C1) TO WK-KMKJNP                                           True
+00351  PERFORM KIG-TEKIBI-E THRU KIG-TEKIBI-X                                      True
+00352  VARYING A1 FROM +1 BY +1                                                    True
+00353  UNTIL (A1 > 4) OR (SEI-MIDNX (A1) = SPACE)                                  True
+00354  PERFORM TBLSRH-E THRU TBLSRH-X                                              True
+00355  VARYING A1 FROM +1 BY +1                                                    True
+00356  UNTIL (A1 > 4) OR (WK-KTKDKP (A1) = ZERO)                                   True
+00357  COMPUTE A1 = A1 - 1                                                         True
+00358  IF WK-ZTKDKP = WK-KTKDKP (A1)                                               True
+00359  PERFORM TBLSIFT-E THRU TBLSIFT-X                                            True
+00360  COMPUTE B1 = B1 - 1                                                         True
+00361  ELSE                                                                        True
+00362  IF WK-ZTKDKP < LKC-YOKUP                                                    True
+00363  PERFORM TBLSIFT-E THRU TBLSIFT-X                                            True
+00364  COMPUTE B1 = B1 - 1                                                         True
+00365  ELSE                                                                        True
+00366  NEXT SENTENCE.                                                              True
+00367  INIT-MKJSIFT-X.                                                             True
+00368  EXIT.                                                                       True
+00369  EJECT                                                                       True
+00370  *        *********************************************************          True
+00371  *        *                                                       *          True
+00372  *        *           新規確定　判定（随時）                      *                     True
+00373  *        *********************************************************          True
+00374  *                                                                           True
+00375  SKAK-ZUIJI-E.                                                               True
+00376  MOVE SEI-NKJNKX TO LKSB129-KRSYU.                                           True
+00377  MOVE ZERO       TO LKSB129-TRIBP.                                           True
+00378  PERFORM CALL129-E THRU CALL129-X.                                           True
+00379  IF LKSB129-STATUS = ZERO                                                    True
+00380  IF (LKSB129-RTRKP NOT < LKC-KYOUP) AND                                      True
+00381  (LKSB129-RTRKP     < LKC-YOKUP)                                             True
+00382  MOVE '1'           TO LKC16-SKOUTX                                          True
+00383  MOVE LKSB129-RTKKP TO WK-SMKJNP                                             True
+00384  MOVE LKSB129-RTKKP TO WK-SMKJKP                                             True
+00385  MOVE LKSB129-RATEP TO WK-SRATEP                                             True
+00386  ELSE                                                                        True
+00387  NEXT SENTENCE                                                               True
+00388  ELSE                                                                        True
+00389  MOVE 'E' TO LKC16-SKOUTX.                                                   True
+00390  SKAK-ZUIJI-X.                                                               True
+00391  EXIT.                                                                       True
+00392  EJECT                                                                       True
+00393  *        *********************************************************          True
+00394  *        *                                                       *          True
+00395  *        *           新規確定　判定（定例）                      *                     True
+00396  *        *********************************************************          True
+00397  *                                                                           True
+00398  SKAK-TEIREI-E.                                                              True
+00399  PERFORM SKAK-KJUNNEN-E THRU SKAK-KJUNNEN-X.                                 True
+00400  PERFORM KJUNBI-E THRU KJUNBI-X.                                             True
+00401  MOVE WK-MMDT9 TO WK-SMKJNP.                                                 True
+00402  PERFORM MKKITEI-E THRU MKKITEI-X.                                           True
+00403  IF WK-MMDT9 = LKC-YOKUP                                                     True
+00404  MOVE 'END '     TO SW-LOOP                                                  True
+00405  MOVE '2'        TO LKC16-SKOUTX                                             True
+00406  MOVE WK-MMDT9   TO WK-SMKJKP                                                True
+00407  MOVE SEI-NKJNKX TO LKSB129-KRSYU                                            True
+00408  MOVE WK-SMKJKP  TO LKSB129-TRIBP                                            True
+00409  PERFORM CALL129-E THRU CALL129-X                                            True
+00410  IF LKSB129-STATUS = ZERO                                                    True
+00411  MOVE LKSB129-RATEP TO WK-SRATEP                                             True
+00412  ELSE                                                                        True
+00413  MOVE 'E' TO LKC16-SKOUTX                                                    True
+00414  ELSE                                                                        True
+00415  NEXT SENTENCE.                                                              True
+00416  SKAK-TEIREI-X.                                                              True
+00417  EXIT.                                                                       True
+00418  EJECT                                                                       True
+00419  *        *********************************************************          True
+00420  *        *                                                       *          True
+00421  *        *           新規確定　判定（臨時）                      *                     True
+00422  *        *********************************************************          True
+00423  *                                                                           True
+                                                                             False
+00424  SKAK-RINJI-A.                                                               False
+                                                                             False
+00425  IF (SEI-NRMDTP NOT = ZERO) AND (SEI-NMINHP NOT = ZERO)                      True
+00426  MOVE SEI-NKJNKX TO LKSB129-KRSYU                                            True
+00427  MOVE LKC-YOKUP  TO LKSB129-TRIBP                                            True
+00428  PERFORM CALL129-E THRU CALL129-X                                            True
+00429  IF LKSB129-STATUS = ZERO                                                    True
+00430  IF (LKSB129-RTKKP     > LKC-KYOUP) AND                                      True
+00431  (LKSB129-RTKKP NOT > LKC-YOKUP)                                             True
+00432  MOVE LKSB129-RATEP TO WK-SRATEP                                             True
+00433  MOVE LKSB129-RTKKP TO WK-SMKJNP                                             True
+00434  MOVE LKSB129-RTKKP TO WK-SMKJKP                                             True
+00435  MOVE SEI-NRMDTP    TO WK-MMDT9                                              True
+00436  MOVE SEI-NRMDTP    TO WK-YMD9                                               True
+00437  MOVE 'LOOP' TO SW-LOOP1                                                     True
+00438  PERFORM SKAK-MKJCHK-E THRU SKAK-MKJCHK-X                                    True
+00439  VARYING B1 FROM +1 BY +1                                                    True
+00440  UNTIL (B1 > 4                 ) OR                                          True
+00441  (SEI-NMMDTX (B1) = SPACE) OR                                                True
+00442  (SW-LOOP1 = 'END '      )                                                   True
+00443  IF SW-LOOP1 = 'END '                                                        True
+00444  PERFORM MKKITEI-E THRU MIKITEI-X                                            True
+00445  PERFORM SKAK-TEKIRTPU-E THRU SKAK-TEKIRTPU-X                                True
+00446  ELSE                                                                        True
+00447  MOVE SEI-NRMDTP TO WK-MMDT9                                                 True
+00448  PERFORM SKAK-TEKIRTPU-E THRU SKAK-TEKIRTPU-X                                True
+00449  ELSE                                                                        True
+00450  NEXT SENTENCE                                                               True
+00451  ELSE                                                                        True
+00452  MOVE 'E' TO LKC16-SKPUTX                                                    True
+00453  ELSE                                                                        True
+00454  NEXT SENTENCE.                                                              True
+00455  SKAK-RINJI-X.                                                               True
+****** ************************** データの終り ********************************          True
+ 
+ 
+####### Old Source ############################################################
+****** ************************** データの始め ********************************          True
+00001  IDENTIFICATION DIVISION.                                                    True
+00002  PROGRAM-ID.    CMC16000.                                                    True
+00003  AUTHOR.        SECOM.KASAHARA                                               True
+00004  DATE-WRITTEN.  SEP 27,1995.                                                 True
+00005  DATE-COMPILED.                                                              True
+00006  REMARKS.       SYSTEM NAME-------ｸﾗｽ ﾊﾞﾂﾁ                                   True
+00007  SUBSYSTEM NAME----ｸﾘｺｼ                                                      True
+00008  PACKAGE NAME------ﾏｽﾀｰｸﾘｺｼ                                                  True
+00009  MODULE NAME-------自動変更異動作成．                                                 True
+00010  ENVIRONMENT DIVISION.                                                       True
+00011  CONFIGURATION SECTION.                                                      True
+00012  SOURCE-COMPUTER.            IBM-370.                                        True
+00013  OBJECT-COMPUTER.            IBM-370.                                        True
+00014  EJECT                                                                       True
+00015  DATA DIVISION.                                                              True
+00016  WORKING-STORAGE SECTION.                                                    True
+00017  *                                                                           True
+                                                                             False
+00018  01  FILLER.                                                                 True
+00019  02  FILLER              PIC X(16)  VALUE 'CMC16000 WORKING'.                True
+00020  02  FILLER              PIC X(16)  VALUE '-AREA START HERE'.                True
+00021  *                                                                           True
+00022  01  FILLER                  PIC X(16)  VALUE 'SWITCH------AREA'.            True
+00023  01  SWITCH-AREA.                                                            True
+00024  02  SW-LOOP             PIC X(4)   VALUE 'LOOP'.                            True
+00025  02  SW-LOOP1            PIC X(4)   VALUE 'LOOP'.                            True
+00026  02  SW-LOOP2            PIC X(4)   VALUE 'LOOP'                             True
+00027  *                                                                           True
+00028  01  FILLER                  PIC X(16)  VALUE 'SUBSCRIPT---AREA'.            True
+00029  01  SUBSCRIPT-AREA  SYNC.                                                   True
+00030  02  A1                  PIC S9(4)  VALUE ZERO  COMP.                        True
+00031  02  B1                  PIC S9(4)  VALUE ZERO  COMP.                        True
+00032  02  C1                  PIC S9(4)  VALUE ZERO  COMP.                        True
+00033  *                                                                           True
+00034  01  FILLER                  PIC X(16)  VALUE 'WORK-------AREAX'.            True
+                                                                             False
+00035  01  WORK-AREAX.                                                             True
+00036  02  WK-SMKJKP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00037  02  WK-SMKJNP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00038  02  WK-STKDTP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00039  02  WK-STKDKP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00040  02  WK-SRATEP           PIC S9(5)  VALUE ZERO  COMP-3.                      True
+00041  02  WK-SKRATP           PIC S9(5)  VALUE ZERO  COMP-3.                      True
+00042  02  WK-KMKJKP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00043  02  WK-KMKJNP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00044  02  WK-KMKJBP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00045  02  WK-KTKDTX                                                               True
+00046  03  WK-KTKDTP       OCCURS 4                                                True
+00047  PIC 9(9)   COMP-3.                                                          True
+00048  02  WK-KTKDKX.                                                              True
+00049  03  WK-KTKDKP       OCCURS 4                                                True
+00050  PIC 9(9)   COMP-3.                                                          True
+00051  02  WK-HENDTP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00052  02  WK-HENDKP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00053  02  WK-ZTKDKP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00054  02  WK-KRATEP           PIC S9(5)  VALUE ZERO  COMP-3.                      True
+00055  02  WK-KKRATP           PIC S9(5)  VALUE ZERO  COMP-3.                      True
+00056  *   ルネサス１／２利子補給率用                                       CL**8               True
+00057  02  WK-RNRTX.                                                               True
+00058  03  WK-RNRTP        PIC S9(5)  VALUE ZERO COMP-3.                           True
+00059  02  WK-KFNRTX.                                                              True
+00060  03  WK-KFNRTP       PIC S9(5)  VALUE ZERO COMP-3.                           True
+                                                                             False
+00061  02  WK-KFRTX.                                                               True
+00062  03  WK-KFR1X.                                                               True
+00063  04  WK-KFR1P    PIC S9(5)  VALUE ZERO COMP-3.                               True
+00064  03  WK-KFR2X.                                                               True
+00065  04  WK-KFR2P    PIC S9(5)  VALUE ZERO COMP-3.                               True
+00066  03  WK-KFR3X.                                                               True
+00067  04  WK-KFR3P    PIC S9(5)  VALUE ZERO COMP-3.                               True
+00068  03  WK-KFR4X.                                                               True
+00069  04  WK-KFR4P    PIC S9(5)  VALUE ZERO COMP-3.                               True
+00070  02  WK-MMDTX.                                                               True
+00071  03  WK-MMDT9        PIC 9(9)   VALUE ZERO.                                  True
+00072  02  FILLER REDEFINES WK-MMDTX.                                              True
+00073  03  FILLER          PIC X(1).                                               True
+00074  03  WK-MMYM9        PIC 9(6).                                               True
+00075  03  FILLER          PIC X(2).                                               True
+00076  02  FILLER REDEFINES WK-MMDTX.                                              True
+00077  03  FILLER          PIC X(1).                                               True
+00078  03  WK-MMYY9        PIC 9(4).                                               True
+00079  03  WK-MMMD9        PIC 9(4).                                               True
+00080  02  FILLER REDEFINES WK-MMDTX.                                              True
+00081  03  FILLER          PIC X(1).                                               True
+00082  03  WK-MMDY9        PIC 9(4).                                               True
+00083  03  WK-MMDM9        PIC 9(2).                                               True
+00084  03  WK-MMDD9        PIC 9(2).                                               True
+00085  02  WK-YMDX.                                                                True
+00086  03  WK-YMD9         PIC 9(9)   VALUE ZERO.                                  True
+00087  02  FILLER REDEFINES WK-YMDX.                                               True
+00088  03  FILLER          PIC X(1).                                               True
+00089  03  WK-YMDYY9       PIC 9(4).                                               True
+00090  03  WK-YMDMD9       PIC 9(4).                                               True
+00091  02  FILLER REDEFINES WK-YMDX.                                               True
+00092  03  FILLER          PIC X(1).                                               True
+00093  03  WK-YMDY9        PIC 9(4).                                               True
+00094  03  WK-YMDM9        PIC 9(4).                                               True
+00095  03  WK-YMDD9        PIC 9(2).                                               True
+00096  02  WK-BYPSDP           PIC 9(9)   VALUE ZERO  COMP-3.                      True
+00097  02  WK-HNKHP            PIC 9(5)   VALUE ZERO  COMP-3.                      True
+00098  02  WK-KZYRKX           PIC X(1).                                           True
+00099  *                                                                           True
+00100  01  FILLER                  PIC X(16)  VALUE 'KANJI ｵﾍﾟﾚｰﾀｰID'.             True
+00101  ++INCLUDE IMKANJI2                                                          True
+00102  *                                                                           True
+00103  01  FILLER                  PIC X(16)  VALUE 'IDOU HENSYU AREA'.            True
+00104  01  WK-IDOU-AREA.                                                           True
+00105  02  WK-IDOUX            PIC X(850).                                         True
+00106  02  FILLER REDEFINES WK-IDOUX.                                              True
+00107  ++INCLUDE IMUIDO01                                                          True
+00108  02  FILLER REDEFINES WK-IDOUX.                                              True
+00109  ++INCLUDE IMUIDO02                                                          True
+00110  02  FILLER REDEFINES WK-IDOUX.                                              True
+00111  ++INCLUDE IMUIDO03                                                          True
+00112  *                                                                           True
+00113  01  FILLER                  PIC X(16)  VALUE 'PARMX-------AREA'.            True
+00114  ++INCLUDE IMLKS129                                                          True
+00115  ++INCLUDE IMLKSB21                                                          True
+00116  ++INCLUDE IMLKS131                                                          True
+00117  *                                                                           True
+00118  01  FILLER                  PIC X(16)  VALUE 'ASBOUTOU----AREA'.            True
+00119  ++INCLUDE IMLOUTOU                                                          True
+00120  01  FILLER                  PIC X(16)  VALUE 'AM8B8300----AREA'.            True
+00121  ++INCLUDE IML8B830                                                          True
+00122  01  FILLER                  PIC X(16)  VALUE 'ASBMESSG-WORK   '.            True
+00123  *                                                                           True
+00124  ++INCLUDE IMMSG899                                                          True
+00125  *                                                                           True
+00126  01  FILLER                  PIC X(16)  VALUE 'MSG-PARM        '.            True
+00127  ++INCLUDE IMLMESSG                                                          True
+00128  *                                                                           True
+00129  01  FILLER                  PIC X(16)  VALUE 'ABEND-CODE      '.            True
+00130  01  ABEND-CODE.                                                             True
+00131  02  FILLER              PIC S9(5)  VALUE +999  COMP.                        True
+00132  *                                                                           True
+00133  01  FILLER.                                                                 True
+00134  02  FILLER              PIC X(16)  VALUE 'CMC16000 WORKING'.                True
+00135  02  FILLER              PIC X(16)  VALUE '-AREA ENDED HERE'.                True
+00136  EJECT                                                                       True
+00137  LINKAGE SECTION.                                                            True
+00138  ++INCLUDE IMCU0001                                                          True
+00139  *                                                                           True
+00140  01  LKC-SEID.                                                               True
+00141  02  LKC-SEIDX.                                                              True
+00142  ++INCLUDE IMUSEIDO                                                          True
+00143  *                                                                           True
+00144  01  LKC-KJNTBLX.                                                            True
+00145  ++INCLUDE IMUKRTBL                                                          True
+00146  *                                                                           True
+00147  ++INCLUDE IMC16000                                                          True
+00148  EJECT                                                                       True
+00149  PROCEDURE DIVISION USING LKC-COMMONX                                        True
+00150  LKC-SEID                                                                    True
+00151  LKC-KJNTBLX                                                                 True
+00152  LKC16-PARMX.                                                                True
+00153  *                                                                           True
+00154  ******************************************************************          True
+00155  *                                                                *          True
+00156  *            自動変更異動                                        *                True
+00157  *                                   -CMC16000-                   *          True
+00158  ******************************************************************          True
+00159  *                                                                           True
+                                                                             False
+00160  *        *********************************************************          True
+00161  *        *                                                       *          True
+00162  *        *           メイン処理                                  *               True
+00163  *        *********************************************************          True
+00164  *                                                                           True
+00165  PERFORM INIT-E THRU INIT-X.                                                 True
+00166  PERFORM SINKAK-E THRU SINKAK-X.                                             True
+00167  IF LKC16-SKOUTX NOT = SPACE ANE 'E'                                         True
+00168  PERFORM SKAK-PARMSET-E THRU SKAK-PARMSET-X                                  True
+00169  PERFORM SKAK-IDOSAKSEI-E THRU SKAK-IDOSAKSEI-X                              True
+00170  ELSE                                                                        True
+00171  NEXT SENTENCE.                                                              True
+00172  PERFORM KIGYOK-E THRU KIGYOK-X.                                             True
+00173  IF LKC16-KYOUTX NOT = SPACE AND 'E'                                         True
+00174  IF SEI-MIDNX (1) NOT = SPACE                                                True
+00175  PERFORM KYOK-PARMSET-E THRU KYOK-PARMSET-X                                  True
+00176  PERFORM KYOK-SEIDKSN-E THRU KYOK-SEIDKSN-X                                  True
+00177  ELSE                                                                        True
+00178  MOVE SPACE TO LKC16-KYOUTX                                                  True
+00179  ELSE                                                                        True
+00180  NEXT SENTENCE.                                                              True
+00181  PERFORM KIGKAK-E THRU KIGKAK-X.                                             True
+00182  IF LKC16-KKOUTX NOT = SPACE AND 'E'                                         True
+00183  PERFORM KKAK-PARMSET-E THRU KKAK-PARMSET-X                                  True
+00184  PERFORM KKAK-SEIDKSN-E THRU KKAK-SEIDKSN-X                                  True
+00185  PERFORM KKAK-IDOSAKSEI-E THRU KKAK-IDOSAKSEI-X                              True
+00186  ELSE                                                                        True
+00187  NEXT SENTENCE.                                                              True
+00188  GOBACK.                                                                     True
+00189  EJECT                                                                       True
+00190  *        *********************************************************          True
+00191  *        *                                                       *          True
+00192  *        *           初期処理                                    *              True
+00193  *        *********************************************************          True
+00194  *                                                                           True
+00195  INIT-E.                                                                     True
+00196  MOVE SPACE       TO LKC16-PARMX.                                            True
+00197  MOVE LKC-KJNTBLX TO LKSB129-KRTBL.                                          True
+00198  MOVE ZERO        TO WK-SMKJKP.                                              True
+00199  MOVE ZERO        TO WK-SMKJNP.                                              True
+00200  MOVE ZERO        TO WK-STKDTP.                                              True
+00201  MOVE ZERO        TO WK-STKDKP.                                              True
+00202  MOVE ZERO        TO WK-SRATEP.                                              True
+00203  MOVE ZERO        TO WK-SKRATP.                                              True
+00204  MOVE ZERO        TO WK-KMKJKP.                                              True
+00205  MOVE ZERO        TO WK-KMKJNP.                                              True
+00206  MOVE ZERO        TO WK-KMKJBP.                                              True
+00207  PERFORM WKTBL-INIT-E THRU WKTBL-INIT-X                                      True
+00208  VARYING A1 FROM +1 BY +1                                                    True
+00209  UNTIL (A1 > 4).                                                             True
+00210  MOVE ZERO        TO WK-ZTKDKP.                                              True
+00211  MOVE ZERO        TO WK-BYPSDP.                                              True
+00212  MOVE ZERO        TO WK-HNKHP.                                               True
+00213  MOVE SPACE       TO WK-KZYRKX.                                              True
+00214  MOVE SPACE       TO SEI-NTOJTX.                                             True
+00215  MOVE SPACE       TO SEI-KTOJTX.                                             True
+00216  PERFORM INIT-KMKJTSET-E THRU INIT-KMKJTSET-X.                               True
+00217  MOVE ZERO        TO WK-KMKJKP.                                              True
+00218  MOVE ZERO        TO WK-KMKJNP.                                              True
+00219  MOVE ZERO        TO WK-KMKJBP.                                              True
+00220  PERFORM WKTBL-INIT-E THRU WKTBL-INIT-X                                      True
+00221  VARYING A1 FROM +1 BY +1                                                    True
+00222  UNTIL (A1 >4).                                                              True
+00223  INIT-X.                                                                     True
+00224  EXIT.                                                                       True
+00225  EJECT                                                                       True
+00226  *        *********************************************************          True
+00227  *        *                                                       *          True
+00228  *        *           新規確定　判定                              *                 True
+00229  *        *********************************************************          True
+00230  *                                                                           True
+00231  SINKAK-E.                                                                   True
+00232  IF SEI-NKJNKX NOT = SPACE AND '000'                                         True
+00233  IF SEI-NRNJKX = '1'                                                         True
+00234  PERFORM SKAK-ZUIJI-E THRU SKAK-ZUIJI-X                                      True
+00235  ELSE                                                                        True
+00236  IF SEI-NMMDTX (1) NOT = SPACE                                               True
+00237  MOVE 'LOOP' TO SW-LOOP                                                      True
+00238  PERFORM SKAK-TEIREI-E THRU SKAK-TEIREI-X                                    True
+00239  VARYING A1 FROM +1 BY +1                                                    True
+00240  UNTIL (A1 > 4                 ) OR                                          True
+00241  (SEI-NMMDTX (A1) = SPACE) OR                                                True
+00242  (SW-LOOP = 'END'        )                                                   True
+00243  IF LKC16-SKOUTX = SPACE                                                     True
+00244  PERFORM SKAK-RINJI-E THRU SKAK-RINJI-X                                      True
+00245  ELSE                                                                        True
+00246  NEXT SENTENCE                                                               True
+00247  ELSE                                                                        True
+00248  NEXT SENTENCE                                                               True
+00249  ELSE                                                                        True
+00250  NEXT SENTENCE.                                                              True
+00251  SINKAK-X.                                                                   True
+00252  EXIT.                                                                       True
+00253  EJECT                                                                       True
+00254  *        *********************************************************          True
+00255  *        *                                                       *          True
+00256  *        *           既貸予告　判定                              *                 True
+00257  *        *********************************************************          True
+00258  *                                                                           True
+00259  KIGYOK-E.                                                                   True
+00260  IF SEI-KHKBNX = '2'                                                         True
+00261  IF SEI-KRNJKX = '1'                                                         True
+00262  PERFORM KYOK-ZUIJI-E THRU KYOK-ZUIJI-X                                      True
+00263  ELSE                                                                        True
+00264  IF SEI-KMMDTX (1) NOT = SPACE                                               True
+00265  MOVE 'LOOP' TO SW-LOOP                                                      True
+00266  PERFORM KYOK-TEIREI-E THRU KYOK-TEIREI-X                                    True
+00267  VARYING A1 FROM +1 BY +1                                                    True
+00268  UNTIL (A1 > 4                 ) OR                                          True
+00269  (SEI-KMMDTX (A1) = SPACE) OR                                                True
+00270  (SW-LOOP = 'END'        )                                                   True
+00271  IF LKC16-KYOUTX = SPACE                                                     True
+00272  PERFORM KYOK-RINJI-E THRU KYOK-RINJI-X                                      True
+00273  ELSE                                                                        True
+00274  NEXT SENTENCE                                                               True
+00275  ELSE                                                                        True
+00276  NEXT SENTENCE                                                               True
+00277  ELSE                                                                        True
+00278  NEXT SENTENCE.                                                              True
+00279  KIGYOK-X.                                                                   True
+00280  EXIT.                                                                       True
+00281  EJECT                                                                       True
+00282  *        *********************************************************          True
+00283  *        *                                                       *          True
+00284  *        *           既貸確定　判定                              *                 True
+00285  *        *********************************************************          True
+00286  *                                                                           True
+00287  KIGKAK-E.                                                                   True
+00288  IF SEI-KHKBNX = '2'                                                         True
+00289  IF SEI-KKJNKX NOT = SPACE AND '000'                                         True
+00290  IF SEI-SSITIX = '1' OR '5'                                                  True
+00291  IF (SEI-RMMDTP (1) NOT = ZERO) AND                                          True
+00292  (SEI-MIDNX  (1) NOT = SPACE)                                                True
+00293  MOVE SEI-RMMDTP (1) TO WK-KMKJNP                                            True
+00294  PERFORM KIG-TEKIBI-E THRU KIG-TEKIBI-X                                      True
+00295  VARYING A1 FROM +1 BY +1                                                    True
+00296  UNTIL (A1 > 4                ) OR                                           True
+00297  (SEI-MIDNX (A1) = SPACE)                                                    True
+00298  MOVE 'LOOP' TO SW-LOOP                                                      True
+00299  PERFORM KKAK-TEKISRH-E THRU KKAK-TEKISRH-X                                  True
+00300  VARYING A1 FROM +1 BY +1                                                    True
+00301  UNTIL (A1 > 4               ) OR                                            True
+00302  (WK-KTKDKP (A1) = ZERO) OR                                                  True
+00303  (SW-LOOP = 'END'      )                                                     True
+00304  ELSE                                                                        True
+00305  NEXT SENTENCE                                                               True
+00306  ELSE                                                                        True
+00307  NEXT SENTENCE                                                               True
+00308  ELSE                                                                        True
+00309  NEXT SENTENCE                                                               True
+00310  ELSE                                                                        True
+00311  NEXT SENTENCE.                                                              True
+00312  KIGKAK-X.                                                                   True
+00313  EXIT.                                                                       True
+00314  EJECT                                                                       True
+00315  *        *********************************************************          True
+00316  *        *                                                       *          True
+00317  *        *           既貸利率見直し基準日テーブル確定            *                          True
+00318  *        *********************************************************          True
+00319  *                                                                           True
+00320  INIT-KMKJTSET-E.                                                            True
+00321  IF SEI-RMMDTP (1) = ZERL                                                    True
+00322  NEXT SENTENCE                                                               True
+00323  ELSE                                                                        True
+00324  MOVE 'LOOP' TO SW-LOOP                                                      True
+00325  PERFORM INI-MKJSIFT-E THRU MKJSIFT-X                                        True
+00326  VARYING B1 FROM +1 BY +1                                                    True
+00327  UNTIL (B1 > 3) OR (SW-LOOP = 'END').                                        True
+00328  INIT-KMKJTSET-X.                                                            True
+00329  EXIT.                                                                       True
+00330  EJECT                                                                       True
+00331  *        *********************************************************          True
+00332  *        *                                                       *          True
+00333  *        *           基準日テーブルシフト判定                    *                      True
+00334  *        *********************************************************          True
+00335  *                                                                           True
+00336  INIT-MKJSIFT-E.                                                             True
+00337  COMPUTE C1 = B1 + 1.                                                        True
+00338  IF SEI-RMMDTP (C1) NOT = ZERO                                               True
+00339  MOVE 'END' TO SW-LOOP                                                       True
+00340  ELSE                                                                        True
+00341  MOVE SEI-RMMDTP (B1) TO WK-KMKJNP                                           True
+00342  PERFORM KIG-TEKIBI-E THRU KIG-TEKIBI-X                                      True
+00343  VARYING A1 FROM +1 BY +1                                                    True
+00344  UNTIL (A1 > 4) OR (SEI-MIDNX (A1) = SPACE)                                  True
+00345  PERFORM TBLSRH-E THRU TBLSRH-X                                              True
+00346  VARYING A1 FROM +1 BY +1                                                    True
+00347  UNTIL (A1 > 4) OR (WK-KTKDKP (A1) = ZERO)                                   True
+00348  COMPUTE A1 = A1 - 1                                                         True
+00349  MOVE WK-KTKDKP  (A1) TO WK-ZTKDKP                                           True
+00350  MOVE SEI-RMMDTP (C1) TO WK-KMKJNP                                           True
+00351  PERFORM KIG-TEKIBI-E THRU KIG-TEKIBI-X                                      True
+00352  VARYING A1 FROM +1 BY +1                                                    True
+00353  UNTIL (A1 > 4) OR (SEI-MIDNX (A1) = SPACE)                                  True
+00354  PERFORM TBLSRH-E THRU TBLSRH-X                                              True
+00355  VARYING A1 FROM +1 BY +1                                                    True
+00356  UNTIL (A1 > 4) OR (WK-KTKDKP (A1) = ZERO)                                   True
+00357  COMPUTE A1 = A1 - 1                                                         True
+00358  IF WK-ZTKDKP = WK-KTKDKP (A1)                                               True
+00359  PERFORM TBLSIFT-E THRU TBLSIFT-X                                            True
+00360  COMPUTE B1 = B1 - 1                                                         True
+00361  ELSE                                                                        True
+00362  IF WK-ZTKDKP < LKC-YOKUP                                                    True
+00363  PERFORM TBLSIFT-E THRU TBLSIFT-X                                            True
+00364  COMPUTE B1 = B1 - 1                                                         True
+00365  ELSE                                                                        True
+00366  NEXT SENTENCE.                                                              True
+00367  INIT-MKJSIFT-X.                                                             True
+00368  EXIT.                                                                       True
+00369  EJECT                                                                       True
+00370  *        *********************************************************          True
+00371  *        *                                                       *          True
+00372  *        *           新規確定　判定（随時）                      *                     True
+00373  *        *********************************************************          True
+00374  *                                                                           True
+00375  SKAK-ZUIJI-E.                                                               True
+00376  MOVE SEI-NKJNKX TO LKSB129-KRSYU.                                           True
+00377  MOVE ZERO       TO LKSB129-TRIBP.                                           True
+00378  PERFORM CALL129-E THRU CALL129-X.                                           True
+00379  IF LKSB129-STATUS = ZERO                                                    True
+00380  IF (LKSB129-RTRKP NOT < LKC-KYOUP) AND                                      True
+00381  (LKSB129-RTRKP     < LKC-YOKUP)                                             True
+00382  MOVE '1'           TO LKC16-SKOUTX                                          True
+00383  MOVE LKSB129-RTKKP TO WK-SMKJNP                                             True
+00384  MOVE LKSB129-RTKKP TO WK-SMKJKP                                             True
+00385  MOVE LKSB129-RATEP TO WK-SRATEP                                             True
+00386  ELSE                                                                        True
+00387  NEXT SENTENCE                                                               True
+00388  ELSE                                                                        True
+00389  MOVE 'E' TO LKC16-SKOUTX.                                                   True
+00390  SKAK-ZUIJI-X.                                                               True
+00391  EXIT.                                                                       True
+00392  EJECT                                                                       True
+00393  *        *********************************************************          True
+00394  *        *                                                       *          True
+00395  *        *           新規確定　判定（定例）                      *                     True
+00396  *        *********************************************************          True
+00397  *                                                                           True
+00398  SKAK-TEIREI-E.                                                              True
+00399  PERFORM SKAK-KJUNNEN-E THRU SKAK-KJUNNEN-X.                                 True
+00400  PERFORM KJUNBI-E THRU KJUNBI-X.                                             True
+00401  MOVE WK-MMDT9 TO WK-SMKJNP.                                                 True
+00402  PERFORM MKKITEI-E THRU MKKITEI-X.                                           True
+00403  IF WK-MMDT9 = LKC-YOKUP                                                     True
+00404  MOVE 'END '     TO SW-LOOP                                                  True
+00405  MOVE '2'        TO LKC16-SKOUTX                                             True
+00406  MOVE WK-MMDT9   TO WK-SMKJKP                                                True
+00407  MOVE SEI-NKJNKX TO LKSB129-KRSYU                                            True
+00408  MOVE WK-SMKJKP  TO LKSB129-TRIBP                                            True
+00409  PERFORM CALL129-E THRU CALL129-X                                            True
+00410  IF LKSB129-STATUS = ZERO                                                    True
+00411  MOVE LKSB129-RATEP TO WK-SRATEP                                             True
+00412  ELSE                                                                        True
+00413  MOVE 'E' TO LKC16-SKOUTX                                                    True
+00414  ELSE                                                                        True
+00415  NEXT SENTENCE.                                                              True
+00416  SKAK-TEIREI-X.                                                              True
+00417  EXIT.                                                                       True
+00418  EJECT                                                                       True
+00419  *        *********************************************************          True
+00420  *        *                                                       *          True
+00421  *        *           新規確定　判定（臨時）                      *                     True
+00422  *        *********************************************************          True
+00423  *                                                                           True
+00424  SKAK-RINJI-E.                                                               False
+00425  IF (SEI-NRMDTP NOT = ZERO) AND (SEI-NMINHP NOT = ZERO)                      True
+00426  MOVE SEI-NKJNKX TO LKSB129-KRSYU                                            True
+00427  MOVE LKC-YOKUP  TO LKSB129-TRIBP                                            True
+00428  PERFORM CALL129-E THRU CALL129-X                                            True
+00429  IF LKSB129-STATUS = ZERO                                                    True
+00430  IF (LKSB129-RTKKP     > LKC-KYOUP) AND                                      True
+00431  (LKSB129-RTKKP NOT > LKC-YOKUP)                                             True
+00432  MOVE LKSB129-RATEP TO WK-SRATEP                                             True
+00433  MOVE LKSB129-RTKKP TO WK-SMKJNP                                             True
+00434  MOVE LKSB129-RTKKP TO WK-SMKJKP                                             True
+00435  MOVE SEI-NRMDTP    TO WK-MMDT9                                              True
+00436  MOVE SEI-NRMDTP    TO WK-YMD9                                               True
+00437  MOVE 'LOOP' TO SW-LOOP1                                                     True
+00438  PERFORM SKAK-MKJCHK-E THRU SKAK-MKJCHK-X                                    True
+00439  VARYING B1 FROM +1 BY +1                                                    True
+00440  UNTIL (B1 > 4                 ) OR                                          True
+00441  (SEI-NMMDTX (B1) = SPACE) OR                                                True
+00442  (SW-LOOP1 = 'END '      )                                                   True
+00443  IF SW-LOOP1 = 'END '                                                        True
+00444  PERFORM MKKITEI-E THRU MIKITEI-X                                            True
+00445  PERFORM SKAK-TEKIRTPU-E THRU SKAK-TEKIRTPU-X                                True
+00446  ELSE                                                                        True
+00447  MOVE SEI-NRMDTP TO WK-MMDT9                                                 True
+00448  PERFORM SKAK-TEKIRTPU-E THRU SKAK-TEKIRTPU-X                                True
+00449  ELSE                                                                        True
+00450  NEXT SENTENCE                                                               True
+00451  ELSE                                                                        True
+00452  MOVE 'E' TO LKC16-SKPUTX                                                    True
+00453  ELSE                                                                        True
+00454  NEXT SENTENCE.                                                              True
+00455  SKAK-RINJI-X.                                                               True
+****** ************************** データの終り ********************************          True

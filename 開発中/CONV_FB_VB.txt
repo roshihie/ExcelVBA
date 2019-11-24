@@ -1,0 +1,26 @@
+//XXXXCNV1 JOB CLASS=J,MSGCLASS=V,REGION=2048K,NOTIFY=XXXX
+/*XEQ CZEA
+//JOBCAT   DD  DISP=SHR,DSN=UCAT40
+//             DISP=SHR,DSN=UCAT10
+//*********************************************************************
+//*      レコードフォーマットＦＢ→ＶＢ　コンバート
+//*********************************************************************
+//*********************************************************************
+//*      ＶＢファイル　アロケート
+//*********************************************************************
+//STEP010  EXEC PGM=IEFBR14
+//ALOCDD   DD  DISP=(,CATLG),DSN=THYD.XXXXXXXX.YYYYYYYY.VB
+//             UNIT=3390,VOL=SER=TECKMA,SPACE=(TRK,(100,100),RLSE),
+//             DCB=(DSORG=PS,RECFM=VB,LRECL=3096,BLKSIZE=9000)
+//*
+//*********************************************************************
+//*      ＦＢ→ＶＢ　コンバート
+//*********************************************************************
+//STEP020  EXEC  SORT
+//SORTIN   DD  DISP=SHR,DSN=THYD.XXXXXXXX.YYYYYYYY
+//SORTOUT  DD  DISP=OLD,DSN=THYD.XXXXXXXX.YYYYYYYY.VB
+//SYSIN    DD  *
+ OPTION COPY
+ OUTFFILE=FNAMES=SORTOUT,FTOV
+/*
+//

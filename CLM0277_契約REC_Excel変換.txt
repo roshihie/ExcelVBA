@@ -1,0 +1,85 @@
+Option Explicit
+
+Public Sub CLM0277_å_ñÒREC_ToExcel()
+
+  Const sEXCEL_HDRPASS As Sting = _
+        "\\Stdtci401\919\102_ç‡å`ÉçÅ[Éì\ÉèÅ[ÉN\ÉZÉRÉÄ\ä}å¥\MyOwn\ÉtÉ@ÉCÉãì‡óe_HDR\"
+  Const cnTRG_SHEET As String = "å_ñÒ"
+  Const cnå_ñÒREC_HDR As String = "CLM0277_å_ñÒREC_HDR.xlsx"
+
+  Dim sTrgBook As String
+
+  Application.ScreenUpdating = False
+  Columns(2).TextToColumns Destination:=cells(1, 2), DataType:=xlDelimited, _
+    TextQualiFier:=xlDoubleQuote, Comma:=True, _
+    FieldInfo:=Array(Array( 1, 2), Array( 2, 2), Array( 3, 2), Array( 4, 2), Array( 5, 2), _
+                     Array( 6, 1), Array( 7, 1), Array( 8, 2), Array( 9, 2), Array(10, 2), _
+                     Array(11, 2), Array(12, 2), Array(13, 2), Array(14, 2), Array(15, 2), _
+                     Array(16, 2), Array(17, 2), Array(18, 2), Array(19, 2), Array(20, 2), _
+                     Array(21, 2), Array(22, 2), Array(23, 2), Array(24, 2), Array(25, 2), _
+                     Array(26, 2)), _
+    TrailingMinusNumber:=True
+
+  With Range(Cells(2, 2), Cells(2, 2).End(xlDown)).EntireRow
+    .RowHeight = 12
+  End With
+
+  With Range(Cells(2, 2). Cells(2, 2).End(xlDown).End(xlToRight))
+    .HorizontalAlignment = xlCenter
+  End With
+
+  With Range(Cells(2, 6).Offset(, 1), Cells(2, 7).Offset(, 1).End(xlDown))
+    .NumberFormatLocal = "#,##0_ "
+  End With
+
+  Columns(2).Insert Shift:=xlToRight
+  Range(Cells(2, 2), Cells(2, 3).End(xlDown).End(xlToRight)).Select
+  Call sbårê¸ï`âÊ(Selection)
+
+  sTrgBook = ActiveWorkbook.Name
+  Workbooks.Open Filename:=sEXCEL_HDRPASS & cnå_ñÒREC_HDR, ReadOnly:=True
+
+  Range(Cells(2, 2), Cells(2, ActiveSheet.Columns.Count).End(xlToLeft).Offset(1)).EntireRow.Copy
+  Workbooks(cnå_ñÒREC_HDR).Close
+
+  Windows(sTrgBook).Activate
+  With Rows(2)
+    .Insert Shift:=xlDown
+    .PasteSpecial Paste:=xlPasteColumnWidths, Operation:=xlNone
+  End With 
+
+  Range(Cells(2, 2).Offset(1), Cells(2, ActiveSheet.Columns.Count).End(xlToLeft).Offset(1)).AutoFilter
+  Cells(1, 1).Activate
+
+End Sub
+
+
+Private Sub sbårê¸ï`âÊ(oArea As Range)
+
+  With oArea.Borders(xlEdgeTop)
+    .LineStyle = xlContinuous
+    .Weight = xlThin
+  End With
+  With oArea.Borders(xlEdgeLeft)
+    .LineStyle = xlContinuous
+    .Weight = xlThin
+  End With
+  With oArea.Borders(xlEdgeRight)
+    .LineStyle = xlContinuous
+    .Weight = xlThin
+  End With
+  With oArea.Borders(xlInsideVertical)
+    .LineStyle = xlContinuous
+    .Weight = xlThin
+  End With
+  With oArea.Borders(xlInsideHorizontal)
+    .LineStyle = xlDot
+    .Weight = xlThin
+  End With
+  With oArea.Borders(xlEdgeBottom)
+    .LineStyle = xlContinuous
+    .Weight = xlThin
+  End With
+
+End Sub
+

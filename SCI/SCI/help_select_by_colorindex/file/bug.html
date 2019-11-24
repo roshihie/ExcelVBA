@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>バグ情報</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+</head>
+<body>
+<h2>バグ情報</h2>
+<br>
+<br>
+<a href="#latest">１、最新のバグ情報の確認方法</a><br>
+<a href="#AlreadyKnown">２、すでに発見されているバグ</a><br>
+<br>
+<hr width="500">
+<br>
+<h3><a name="latest">１、最新のバグ情報の確認方法</a></h3>
+<blockquote>&nbsp;最新のバグ情報については<br>
+<a href="http://members3.jcom.home.ne.jp/daruma_kyo/download/bug_select_by_colorindex.html">http://members3.jcom.home.ne.jp/daruma_kyo/download/bug_select_by_colorindex.html</a><br>
+
+
+      
+を参照するようにしてください。
+</blockquote>
+<div align="right"><a href="#top">このページのトップへ</a></div>
+<br>
+<hr width="500">
+<br>
+<h3><a name="AlreadyKnown">２、すでに発見されているバグ</a>&nbsp;</h3>
+<blockquote>
+■１．条件付き書式を使っている場合で、数値に変換できる文字列同士を比較している場合に<br>
+正常にセルの色を取得できない事がある。<br>
+例えば、<br>
+　A1=000、B1=000 ※共に、セルの表示形式は[文字列]とする<br>
+でB1にA1と同じときにセルの色を付けると条件付き書式で設定した場合、画面上ではセルに色がつきますが、マクロではそれが無視されます。<br>
+<br>
+原因：条件付き書式で設定した条件式の真偽値をマクロ内で判断しています。そこがバグっています。<br>
+<br><br>
+■２．アクティブワークブックがない状態<br>
+（開いている全てのブックを非表示にした状態（[ウインドウ]メニューの[表示しない]を実行した状態））<br>
+でマクロを起動すると、<br>
+　　実行時エラー'91':<br>
+　　オブジェクト変数またはWithブロック変数が設定されていません。<br>
+というエラーがでる<br>
+</blockquote>
+<div align="right"><a href="#top">このページのトップへ</a></div>
+<br>
+<hr width="500">
+<br>
+</body>
+</html>

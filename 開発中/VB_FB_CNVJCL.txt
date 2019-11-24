@@ -1,0 +1,16 @@
+//XXXXCNV1 JOB CLASS=J,MSGCLASS=V,REGION=2048K,NOTIFY=XXXX
+/*XEQ CZEA
+//JOBCAT   DD  DISP=SHR,DSN=UCAT40
+//             DISP=SHR,DSN=UCAT10
+//*********************************************************************
+//*      レコードフォーマットＶＢ→ＦＢ　コンバート
+//*********************************************************************
+//STEP010  EXEC  SORT
+//SORTIN   DD  DISP=SHR,DSN=THYD.TESTDATA.D110931.VB
+//SORTOUT  DD  DISP=OLD,DSN=THYD.TESTDATA.D110931
+//SYSIN    DD  *
+ OPTION COPY
+ OUTFFILE=FNAMES=SORTOUT,VTOF,
+ OUTREC=(5,LRECL)
+/*
+//

@@ -1,0 +1,4 @@
+自excel に Function プロシージャを定義しなければ、使用できない。
+
+personal.xlsb に Function プロシージャを定義しても、無効である。(認識されない。)
+

@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>注意</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+</head>
+<body>
+<h2><a name="top">注意</a></h2>
+<br>
+<br>
+<a href="#speed">１、条件付き書式を使ったときの実行スピードについて</a><br>
+<a href="#confirmation">２、動作確認</a><br>
+<a href="#bug">３、バグ、誤作動について</a><br>
+<a href="#copyright">４、商標について</a><br>
+<a href="#others">５、その他</a><br>
+<br>
+<hr width="500">
+<br>
+<h3><a name="speed">１、条件付き書式を使ったときの実行スピードについて</a></h3>
+<blockquote>
+
+　条件付き書式を使ってセルの塗りつぶしの色を設定した場合は、そうでないときに比べ、実行スピード（[参照]、[非表示にする]、[削除する]ボタンを押したときの処理スピード）が1/3～1/5（条件式の数や、条件式の長さにより変わります。）になります。<br>
+　以下に作成者が比較した結果を示します。<br>
+  <br>
+条件:A、B列に1行目から10000行目までのセルの値を、"=
+row(自分のセルアドレス)"から計算させ、A列については条件付き書式を使って、B
+列については普通の書式で、セルの値が6の倍数のとき赤色、6の倍数でなく3の倍数のときライム色、6の倍数でも3の倍数でもなく2の倍数であるときアクア色に設定しました。そして色がつかなかったセルをアドインを使って抽出したときの処理にかかった時間を比較しました。
+  <table width="500" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td width="120"><br>
+        </td>
+        <td width="190">A列<br>
+（条件付き書式で設定）</td>
+        <td width="190">B列<br>
+（書式で設定）</td>
+      </tr>
+      <tr>
+        <td width="120">かかった時間（秒）</td>
+        <td width="190">57</td>
+        <td width="190">19</td>
+      </tr>
+    </tbody>
+  </table>
+
+※テスト環境機種名:iBook、プロセッサ:PowerPC G3 600 MHz、メモリ:640 MB、System:Mac OS X
+10.3.7、Excelのバージョン:10.1.0
+</blockquote>
+<div align="right"><a href="#top">このページのトップへ</a></div>
+<br>
+<hr width="500">
+<br>
+<h3><a name="confirmation">２、動作確認</a></h3>
+<blockquote>
+ 　このアドインの動作確認は Microsoft(R) Excel X for
+Mac(R)
+で行っています。それ以外のバージョンのExcelでこのアドインを実行しようとすると、文字化け、ボタン等のオブジェクトの位置のずれ、エラー等を起こす可能性が高くなります。
+</blockquote>
+<div align="right"><a href="#top">このページのトップへ</a></div>
+<br>
+<hr width="500">
+<br>
+<h3><a name="bug">３、バグ、誤作動について</a></h3>
+<blockquote>
+　特に、条件付き書式を使ってセルの塗りつぶしの色を設定している場合は、誤作動が起こる可能性が高いです。また、このアドインは実行後に[元に戻す]することができませんので、このアドインを使う際は出来るだけ、事前にバックアップをとってください。&nbsp;<br>
+　バグについての詳細は「<a href="bug.html">バグ情報</a>
+
+」を参照してください。
+</blockquote>
+<div align="right"><a href="#top">このページのトップへ</a></div>
+<br>
+<hr width="500">
+<br>
+<h3><a name="copyright">４、商標について</a></h3>
+<blockquote>
+  <ul>
+    <li >Microsoft 、Windows 、および Excel は米国Microsoft 
+    Corporationの米国およびその他の国における登録商標または商標です。 
+    <li >Mac 、Mac OS 、Mac OS X 、iBook は米国Apple 
+    Computer,Inc.の登録商標または商標です。 
+    <li >PowerPC は米国IBM社の登録商標です。 
+    <li >その他、社名および商品名、システム名称などは、一般に各社の商標または登録商標です。 </li>
+  </ul>
+※このアドインの作成者はこれらの会社とはいっさい関係がありません。
+</blockquote>
+<div align="right"><a href="#top">このページのトップへ</a></div>
+<br>
+<hr width="500">
+<br>
+<h3><a name="others">５、その他</a></h3>
+<blockquote>
+  <ul>
+    <li >このアドインを使ったことによる損害は、このアドインの作成者は負わないものとします。 
+    <li 
+    >
+このアドインおよびヘルプの著作権は作成者が所有しています。個人的に利用する場合を除き、無断で転載、配付等はできません。 </li>
+  </ul>
+</blockquote>
+<div align="right"><a href="#top">このページのトップへ</a></div>
+<br>
+<hr width="500">
+<br>
+</body>
+</html>

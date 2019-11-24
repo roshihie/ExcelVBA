@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>何ができるのか</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+</head>
+<body>
+<h2><a name="top">何ができるのか</a></h2>
+<br>
+<br>
+<a href="#can">１、このアドインができること</a><br>
+<a href="#difference">２、オートフィルタとの違い</a><br>
+<a href="#cannot">３、このアドインができないこと</a><br>
+<br>
+<hr width="500">
+<br>
+<h3><a name="can">１、このアドインができること</a></h3>
+<blockquote>
+　あるセル範囲（単一、一列のみ）のセルの塗りつぶしの色を調べます。そして、あるセルの塗りつぶしの色が、あらかじめ選択された色でなかった場合、その
+セルが含まれる行全体を非表示、又は削除します。<br>
+  <br>
+  <center><img src="img/macro_run_exp.jpg" width="535" height="137"><br>
+マクロを実行前と実行後の画面<br>
+　C列に条件付き書式を使って色を付け、ピンクと黄色のセルを表示した。
+  <center></center>
+  </center>
+</blockquote>
+<div align="right"><a href="#top">このページのトップへ</a></div>
+<br>
+<hr width="500">
+<br>
+<h3><a name="difference">２、オートフィルタとの違い</a></h3>
+<blockquote>
+　Excelには、ある特定の条件に一致する行を抽出する機能として[データ]メニューの[フィルタ]の[オートフィルタ]がありますが、ここでは、それ
+との違いをあげます。<br>
+  <br>
+  <table width="500" border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td width="100">　</td>
+        <td width="200">条件付き書式＋アドイン</td>
+        <td width="200">オートフィルタ</td>
+      </tr>
+      <tr>
+        <td width="100">条件の自由度</td>
+        <td width="200">○</td>
+        <td width="200">△</td>
+      </tr>
+      <tr>
+        <td width="100">実行スピード</td>
+        <td width="200">△</td>
+        <td width="200">○</td>
+      </tr>
+      <tr>
+        <td width="100">操作性</td>
+        <td width="200">×</td>
+        <td width="200">○</td>
+      </tr>
+      <tr>
+        <td width="100">[元に戻す]、[繰り返す]、[やり直し]の使用</td>
+        <td width="200">×</td>
+        <td width="200">×</td>
+      </tr>
+      <tr>
+        <td width="100">非表示になった行を含む範囲を選択し、コピーしたとき</td>
+        <td width="200">非表示になったセルもコピーされます（可視セルのみをコピーする場合はExcelのヘルプの<i>『可
+視セルだけをコピーする』</i>を参照してください。）</td>
+        <td width="200">可視セルのみコピーされます</td>
+      </tr>
+    </tbody>
+  </table>
+※このアドインの作成者が独自に調査したものです。（条件の自由度、実行スピード、操作性に関しては、作成者の考えによるものです。）
+</blockquote>
+<div align="right"><a href="#top">このページのトップへ</a></div>
+<br>
+<hr width="500">
+<br>
+<h2><a name="cannot">３、このアドインができないこと</a></h2>
+<ol>
+  <li type="1">元に戻す、繰り返す、やり直しの操作
+  </li>
+  <li type="1">行単位でウインドウ枠が固定されていた場合、処理の開始行をウインドウ枠の直下の行からにする。（オプションで）
+  </li>
+  <li type="1">セルの色が変わったとき、処理を自動でやり直す。</li>
+  <li type="1">設定の保存。<br>
+  </li>
+</ol>
+<br>
+<hr width="500">
+<br>
+</body>
+</html>
